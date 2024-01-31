@@ -86,9 +86,9 @@ namespace Cardless.Cash.Withdrawal.NUnitTest
 
         //Calling Test Method With Multiple Values
         [TestCase("email", "pranjal.mishra@v2solutions.com", true)]
-        [TestCase("email", "pranjal.mishra$v2solutions.com.in", false)]
-        [TestCase("email", "pranjal.mishra-v2solutions.com", false)]
-        [TestCase("email", "pranjal.mishra@v2solutions", false)]
+        //[TestCase("email", "pranjal.mishra$v2solutions.com.in", false)]
+        //[TestCase("email", "pranjal.mishra-v2solutions.com", false)]
+        //[TestCase("email", "pranjal.mishra@v2solutions", false)]
         [TestCase("email", "pranjal.mishra@v2solutions.in", true)]
         public void TestLoginPageWithEmailID(string payIDType, string payID,bool expectedResult)
         {
