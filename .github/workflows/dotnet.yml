@@ -12,9 +12,7 @@ on:
 jobs:
   build:
   
-    env:
-      BUILD_CONFIG: 'Release'
-      SOLUTION: 'Solution1/Cardless.Cash.Withdrawal.sln'
+    
       
     runs-on: windows-latest
 
@@ -25,8 +23,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore $SOLUTION
+      run: dotnet restore 
     - name: Build
-      run: dotnet build $SOLUTION --configuration $BUILD_CONFIG
+      run: dotnet build 
     - name: Test
-      run: dotnet test $SOLUTION --configuration $BUILD_CONFIG
+      run: dotnet test 
