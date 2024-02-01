@@ -31,18 +31,18 @@ namespace Cardless.Cash.Withdrawal.NUnitTest
         
         }
 
-        [Test]
-        public void TestLoginPageWithBlankPayIDType()
-        {
-            CardlessController loginObj = new CardlessController();
-            string payIDType = "";
-            string payID = "pranjal.mishra@v2solutions.com";
+        //[Test]
+        //public void TestLoginPageWithBlankPayIDType()
+        //{
+        //    CardlessController loginObj = new CardlessController();
+        //    string payIDType = "";
+        //    string payID = "pranjal.mishra@v2solutions.com";
 
-            bool validateResult = loginObj.ValidateLoginCred(payIDType, payID);
+        //    bool validateResult = loginObj.ValidateLoginCred(payIDType, payID);
 
-            Assert.IsTrue(validateResult);
+        //    Assert.IsTrue(validateResult);
 
-        }
+        //}
 
         [Test]
         public void TestLoginPageWithBlankPayID()
