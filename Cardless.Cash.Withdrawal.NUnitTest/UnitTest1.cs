@@ -31,44 +31,44 @@ namespace Cardless.Cash.Withdrawal.NUnitTest
         
         }
 
-        //[Test]
-        //public void TestLoginPageWithBlankPayIDType()
-        //{
-        //    CardlessController loginObj = new CardlessController();
-        //    string payIDType = "";
-        //    string payID = "pranjal.mishra@v2solutions.com";
+        [Test]
+        public void TestLoginPageWithBlankPayIDType()
+        {
+            CardlessController loginObj = new CardlessController();
+            string payIDType = "";
+            string payID = "pranjal.mishra@v2solutions.com";
 
-        //    bool validateResult = loginObj.ValidateLoginCred(payIDType, payID);
+            bool validateResult = loginObj.ValidateLoginCred(payIDType, payID);
 
-        //    Assert.IsTrue(validateResult);
+            Assert.IsTrue(validateResult);
 
-        //}
+        }
 
-        //[Test]
-        //public void TestLoginPageWithBlankPayID()
-        //{
-        //    CardlessController loginObj = new CardlessController();
-        //    string payIDType = "email";
-        //    string payID = "";
+        [Test]
+        public void TestLoginPageWithBlankPayID()
+        {
+            CardlessController loginObj = new CardlessController();
+            string payIDType = "email";
+            string payID = "";
 
-        //    bool validateResult = loginObj.ValidateLoginCred(payIDType, payID);
+            bool validateResult = loginObj.ValidateLoginCred(payIDType, payID);
 
-        //    Assert.IsTrue(validateResult);
+            Assert.IsTrue(validateResult);
 
-        //}
+        }
 
-        //[Test]
-        //public void TestLoginPageWithAllFieldsBlank()
-        //{
-        //    CardlessController loginObj = new CardlessController();
-        //    string payIDType = "";
-        //    string payID = "";
+        [Test]
+        public void TestLoginPageWithAllFieldsBlank()
+        {
+            CardlessController loginObj = new CardlessController();
+            string payIDType = "";
+            string payID = "";
 
-        //    bool validateResult = loginObj.ValidateLoginCred(payIDType, payID);
+            bool validateResult = loginObj.ValidateLoginCred(payIDType, payID);
 
-        //    Assert.IsTrue(validateResult);
+            Assert.IsTrue(validateResult);
 
-        //}
+        }
         //Calling Test method with single Value
         [Test]
         public void TestLoginPageWithEmailID()
