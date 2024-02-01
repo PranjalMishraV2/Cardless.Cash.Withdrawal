@@ -11,8 +11,6 @@ on:
 jobs:
   build_and_test:
 
-    
-
     runs-on: windows-latest
 
     steps:
