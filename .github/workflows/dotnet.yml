@@ -11,9 +11,7 @@ on:
 jobs:
   build_and_test:
 
-    env:
-      BUILD_CONFIG: 'Release'
-      SOLUTION: 'Cardless.Cash.Withdrawal.sln'
+    
 
     runs-on: windows-latest
 
@@ -27,13 +25,13 @@ jobs:
 
 
     - name: Restore dependencies
-      run: dotnet restore $SOLUTION
+      run: dotnet restore 
 
     - name: Build
       run: dotnet build 
       
     - name: Test
-      run: dotnet test  --configuration $BUILD_CONFIG --logger "trx;LogFileName=test-results.trx" || true
+      run: dotnet test --logger "trx;LogFileName=test-results.trx" || true
       
     - name: Test Report
       uses: dorny/test-reporter@v1
